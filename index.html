@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/rem.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 1px;
+        }
+        
+        .head_ {
+            height: 55rem;
+            background-color: #ff8a00;
+            overflow: hidden;
+            padding: 5rem 10rem;
+            height: 55rem;
+        }
+        
+        .head_>div {
+            float: left;
+        }
+        
+        .head_>div {
+            width: 124rem;
+            height: 51rem;
+            background: url(./image/index/logo.jpg)no-repeat center center;
+            float: left;
+            background-size: auto 36rem;
+        }
+        
+        .head_>div:nth-child(2) {
+            width: 51rem;
+            height: 51rem;
+            background: url(./image/index/xiazai.jpg) no-repeat center center;
+            float: right;
+            background-size: auto 29rem;
+        }
+        
+        .head_>div:nth-child(3) {
+            width: 27rem;
+            height: 50rem;
+            background: url(./image/index/my.jpg) no-repeat center center;
+            float: right;
+            background-size: auto 29rem;
+        }
+        
+        .b1 {
+            width: 100%;
+            height: 224rem;
+            background: url(./image/index/banner.png)no-repeat center center;
+            background-size: auto 225rem;
+        }
+        
+        .d1 {
+            width: 90%;
+            height: 30rem;
+            background-color: white;
+            color: #666;
+            border: 1rem solid #333;
+            font-size: 12rem;
+            border-radius: 4rem;
+            line-height: 30rem;
+            position: absolute;
+            left: 50%;
+            top: 245rem;
+            transform: translateX(-50%);
+        }
+        
+        .d1>img {
+            width: auto;
+            height: 18rem;
+        }
+        
+        .s1 {
+            width: 100%;
+            height: 85rem;
+            overflow: hidden;
+            background-color: #ff8a00;
+            padding-top: 5rem;
+        }
+        
+        .s1>div {
+            float: left;
+            width: 20%;
+            margin: 0 7rem;
+            color: white;
+            text-align: center;
+            padding-top: 59rem;
+            font-size: 14rem;
+        }
+        
+        .s1>div {
+            background: url(./image/index/index_03.png) no-repeat center top;
+            background-size: auto 55rem;
+        }
+        
+        .s1>div:nth-child(2) {
+            background: url(./image/index/index_05.png) no-repeat center top;
+            background-size: auto 55rem;
+        }
+        
+        .s1>div:nth-child(3) {
+            background: url(./image/index/index_07.png) no-repeat center top;
+            background-size: auto 55rem;
+        }
+        
+        .s1>div:nth-child(4) {
+            background: url(./image/index/index_09.png) no-repeat center top;
+            background-size: auto 55rem;
+        }
+        
+        .f1 {
+            width: 100%;
+            height: 256rem;
+            background: url(./image/index/banner2.png)no-repeat center center;
+            background-size: auto 255rem;
+        }
+        
+        .g1 {
+            padding-top: 5rem;
+            background-color: #ff8a00;
+            width: 100%;
+            height: 50rem;
+            color: white;
+            font-size: 16rem;
+        }
+        
+        .g1>p {
+            padding-left: 8rem;
+        }
+        
+        .k1 {
+            /* width: 100%; */
+            list-style: none;
+            padding: 10rem;
+        }
+        
+        .k1>li {
+            margin-top: 15rem;
+        }
+        
+        .k1>li>div>div>img {
+            width: 100rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .k1>li>div {
+            overflow: hidden;
+            display: flex;
+            border-bottom: 1rem solid red;
+            padding-bottom: 20rem;
+        }
+        
+        .k1>li>div>div {
+            position: relative;
+            flex: 1;
+        }
+        
+        .k1>li>div>div:nth-child(2) {
+            padding-left: 8rem;
+            flex: 2;
+        }
+        
+        .p1 {
+            width: 186rem;
+            font-size: 20rem;
+            font-weight: 800;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .a2 {
+            overflow: hidden;
+        }
+        
+        .a2>div {
+            float: left;
+        }
+        
+        .a2>div:nth-child(2) {
+            float: right;
+            font-weight: 700;
+            color: #ff8a00;
+        }
+        
+        .a3 {
+            overflow: hidden;
+        }
+        
+        .a3>div {
+            float: left;
+            color: #AFAFAF;
+        }
+        
+        .a3>div:nth-child(2) {
+            float: right;
+        }
+        
+        .a2,
+        .a3 {
+            margin: 5rem 0;
+            font-size: 12rem;
+        }
+        
+        .m1 {
+            margin-top: 10rem;
+            font-size: 14rem;
+        }
+        
+        .m1>span {
+            padding: 3rem 5rem;
+            margin-right: 5rem;
+            background-color: #DFE6EB;
+        }
+        
+        .j1 {
+            display: flex;
+            height: 40rem;
+        }
+        
+        .j1>div {
+            height: 50rem;
+            line-height: 50rem;
+            font-size: 18rem;
+            color: #666;
+            flex: 1;
+            text-align: center;
+            border-bottom: 1rem solid #ff8a00;
+        }
+        
+        .l1 {
+            padding: 10rem;
+            display: flex;
+            padding: 10rem 10rem;
+            justify-content: center;
+        }
+        
+        .l1>div {
+            flex: 1;
+            padding-left: 15rem;
+        }
+        
+        .l1>div>ul {
+            list-style: none;
+            font-size: 14rem;
+            color: #666;
+        }
+        
+        .l1>div>ul>li {
+            margin: 10rem 0;
+        }
+        
+        .o2 {
+            padding: 0 10rem;
+            background-color: #2F3130;
+        }
+        
+        .o1 {
+            height: 30rem;
+            background-color: #2F3130;
+            color: #999;
+            line-height: 30rem;
+            padding-left: 20rem;
+            border-bottom: 1rem solid #999;
+            font-size: 14rem;
+        }
+        
+        .y1 {
+            background-color: #2F3130;
+            display: flex;
+            /* justify-content: center; */
+            padding: 10rem 15rem;
+        }
+        
+        .y1>div {
+            display: flex;
+        }
+        
+        .y1>div>div:nth-child(2) {
+            color: #999;
+            font-size: 14rem;
+        }
+        
+        .y1>div:nth-child(1) {
+            margin-right: 55rem;
+        }
+        
+        .y1>div:nth-child(1)>div:nth-child(1) {
+            width: 40rem;
+            height: 40rem;
+            background: url(./image/index/apple.png) no-repeat center center;
+            background-size: auto 20rem;
+        }
+        
+        .y1>div:nth-child(2)>div:nth-child(1) {
+            width: 40rem;
+            height: 40rem;
+            background: url(./image/index/android.png) no-repeat center center;
+            background-size: auto 20rem;
+        }
+        
+        .tail {
+            font-size: 12rem;
+            background-color: #2F3130;
+            padding-top: 25rem;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="out">
+        <div class="head_">
+
+            <head>
+                <div></div>
+
+                <div></div>
+
+                <div>
+                    <a href="./login.html"></a>
+                </div>
+            </head>
+        </div>
+        <div class="b1">
+            <div class="d1">
+                <img src="./image/index/seach.jpg" alt=""> 输入小区或商圈名开始找房喽！
+            </div>
+        </div>
+        <div class="s1">
+            <div>二手</div>
+            <div>新房</div>
+            <div>租房</div>
+            <div>卖房</div>
+        </div>
+        <div class="f1"></div>
+        <div class="g1">
+            <p>热门房源</p>
+            <p>Hot housc</p>
+        </div>
+        <ul class="k1">
+            <li>
+                <div>
+                    <div><img src="./image/index/img1.jpg" alt=""></div>
+                    <div>
+                        <div class="p1">文化部中间层 一层带阁楼</div>
+                        <div class="a2">
+                            <div>2室1厅96㎡南北</div>
+                            <div>1105万</div>
+                        </div>
+                        <div class="a3">
+                            <div>红庙北里</div>
+                            <div>14268元/平</div>
+                        </div>
+                        <div class="m1">
+                            <span>学区房</span><span>独家</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div><img src="./image/index/img1.jpg" alt=""></div>
+                    <div>
+                        <div class="p1">文化部中间层</div>
+                        <div class="a2">
+                            <div>2室1厅96㎡南北</div>
+                            <div>1105万</div>
+                        </div>
+                        <div class="a3">
+                            <div>红庙北里</div>
+                            <div>14268元/平</div>
+                        </div>
+                        <div class="m1">
+                            <span>学区房</span><span>独家</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div><img src="./image/index/img1.jpg" alt=""></div>
+                    <div>
+                        <div class="p1">文化部中间层 一层带阁楼</div>
+                        <div class="a2">
+                            <div>2室1厅96㎡南北</div>
+                            <div>1105万</div>
+                        </div>
+                        <div class="a3">
+                            <div>红庙北里</div>
+                            <div>14268元/平</div>
+                        </div>
+                        <div class="m1">
+                            <span>学区房</span><span>独家</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div style="width: 100%;height: 12rem;background-color: #999;"></div>
+        <div class="j1">
+            <div>热门关注</div>
+            <div>友情链接</div>
+        </div>
+        <div class="l1">
+            <div>
+                <ul>
+                    <li>北京二手房</li>
+                    <li>北京二手房价</li>
+                    <li>海淀日租房</li>
+                    <li>朝阳新房</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>北京找房无忧</li>
+                    <li>青年家园</li>
+                    <li>免税房源</li>
+                    <li>满五年唯一免税</li>
+                </ul>
+            </div>
+        </div>
+        <div class="o2">
+            <div class="o1">
+                北京找房无忧>首页
+            </div>
+        </div>
+        <div class="y1">
+            <div>
+                <div></div>
+                <div>iPhone<br>用户</div>
+            </div>
+            <div>
+                <div></div>
+                <div>Android<br>用户</div>
+            </div>
+        </div>
+        <div class="tail">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

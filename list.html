@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/rem.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 1px;
+        }
+        
+        .head_ {
+            height: 55rem;
+            background-color: #ff8a00;
+            overflow: hidden;
+            padding: 5rem 10rem;
+        }
+        
+        .head_>div {
+            float: left;
+        }
+        
+        .head_>div {
+            width: 124rem;
+            height: 51rem;
+            background: url(./image/index/logo.jpg)no-repeat center center;
+            float: left;
+            background-size: auto 36rem;
+        }
+        
+        .head_>div:nth-child(2) {
+            width: 51rem;
+            height: 51rem;
+            background: url(./image/index/xiazai.jpg) no-repeat center center;
+            float: right;
+            background-size: auto 29rem;
+        }
+        
+        .head_>div:nth-child(3) {
+            width: 27rem;
+            height: 50rem;
+            background: url(./image/index/my.jpg) no-repeat center center;
+            float: right;
+            background-size: auto 29rem;
+        }
+        
+        .a1 {
+            width: 100%;
+            background-color: #f5f5f5;
+            height: 30rem;
+            padding: 8rem 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .a1>div {
+            width: 88%;
+            height: 20rem;
+            font-size: 12rem;
+            padding: 5rem 5rem;
+            border: 1rem solid #333;
+            border-radius: 4rem;
+            background: url(./image/SecondHandList/search_03.png)no-repeat 260rem center white;
+            background-size: auto 25rem;
+            overflow: hidden;
+        }
+        
+        .a1>div>span {
+            font-size: 16rem;
+            margin-right: 30rem;
+            float: right;
+        }
+        
+        .w1 {
+            height: 25rem;
+            display: flex;
+            padding-right: 10rem;
+        }
+        
+        .w1>div {
+            flex: 1;
+            font-size: 16rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .gg1 {
+            background: url(./image/SecondHandList/dd.png) no-repeat right center;
+            background-size: auto 20rem;
+        }
+        
+        .gg2 {
+            background: url(./image/SecondHandList/up.png) no-repeat right center;
+            background-size: auto 20rem;
+        }
+        
+        .uu1 {
+            visibility: visible;
+        }
+        
+        .uu2 {
+            visibility: hidden;
+        }
+        
+        .f1 {
+            width: 90%;
+            list-style: none;
+            padding: 0 10rem;
+            border-bottom: 1rem solid #333;
+        }
+        
+        .f1>li {
+            border-bottom: 1rem solid #333;
+            padding: 10rem 0;
+            font-size: 14rem;
+        }
+        
+        .bo2 {
+            border-bottom: 1rem solid #E5E5E5;
+        }
+        
+        .m1 {
+            width: 90%;
+            padding: 10rem 10rem;
+        }
+        
+        .m1>li {
+            padding: 0 10rem;
+            height: 35rem;
+            font-size: 14rem;
+            line-height: 35rem;
+            overflow: hidden;
+        }
+        
+        .m1>li>input {
+            float: right;
+            margin-right: 10rem;
+            margin-top: 8rem;
+        }
+        
+        .m1>li:nth-child(7) {
+            text-align: center;
+            background-color: #FF8A00;
+            color: white;
+        }
+        
+        .h2 {
+            padding: 10rem;
+        }
+        
+        .h2>div:nth-child(1) {
+            padding: 10rem 0;
+            font-size: 20rem;
+            font-weight: 700;
+        }
+        
+        .h2>ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .h2>ul>li {
+            margin: 8rem 0;
+            width: 20%;
+            text-align: center;
+            font-size: 12rem;
+            border: 1rem solid #333;
+            padding: 3rem 0;
+        }
+        
+        .k11 {
+            display: flex;
+        }
+        
+        .k11>div:nth-child(1) {
+            background-color: #F0F0F0;
+            width: 20%;
+            font-size: 20rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .k11>div:nth-child(1)>div {
+            padding: 10rem 0;
+            background-color: white;
+        }
+        
+        .k11>div:nth-child(2) {
+            /* flex: 2; */
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .k11>div:nth-child(2)>ul {
+            list-style: none;
+        }
+        
+        .k11>div:nth-child(2)>ul>li {
+            font-size: 14rem;
+            padding: 10rem 5rem;
+            text-align: center;
+        }
+        
+        .ll1 {
+            position: absolute;
+            top: 138rem;
+        }
+        
+        .k11,
+        #d1,
+        .m11,
+        .o11 {
+            width: 320rem;
+            background-color: white;
+            z-index: 2;
+        }
+        
+        .n3 {
+            padding: 10rem;
+        }
+        
+        .n3>li {
+            display: flex;
+            border-bottom: 1rem solid #FCA000;
+            padding: 10rem 0;
+        }
+        
+        .n3>li>div:nth-child(1) {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        
+        .n3>li>div:nth-child(1)>img {
+            position: absolute;
+            width: 80rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        
+        .n3>li>div:nth-child(2) {
+            flex: 2;
+        }
+        
+        .n3>li>div:nth-child(2)>div:nth-child(1) {
+            font-size: 16rem;
+            font-weight: 700;
+            margin-bottom: 10rem;
+        }
+        
+        .n3>li>div:nth-child(2)>div:nth-child(2) {
+            font-size: 12rem;
+        }
+        
+        .n3>li>div:nth-child(2)>div:nth-child(3) {
+            margin: 5rem 0;
+            font-size: 12rem;
+            color: #666;
+        }
+        
+        .n3>li>div:nth-child(2)>div:nth-child(4) {
+            font-size: 12rem;
+            color: #666;
+        }
+        
+        .n3>li>div:nth-child(2)>div:nth-child(3)>span {
+            color: #FCA000;
+        }
+        
+        .o2 {
+            padding: 0 10rem;
+            background-color: #2F3130;
+        }
+        
+        .o1 {
+            height: 30rem;
+            background-color: #2F3130;
+            color: #999;
+            line-height: 30rem;
+            padding-left: 20rem;
+            border-bottom: 1rem solid #999;
+            font-size: 14rem;
+        }
+        
+        .y1 {
+            background-color: #2F3130;
+            display: flex;
+            /* justify-content: center; */
+            padding: 10rem 15rem;
+        }
+        
+        .y1>div {
+            display: flex;
+        }
+        
+        .y1>div>div:nth-child(2) {
+            color: #999;
+            font-size: 14rem;
+        }
+        
+        .y1>div:nth-child(1) {
+            margin-right: 55rem;
+        }
+        
+        .y1>div:nth-child(1)>div:nth-child(1) {
+            width: 40rem;
+            height: 40rem;
+            background: url(./image/index/apple.png) no-repeat center center;
+            background-size: auto 20rem;
+        }
+        
+        .y1>div:nth-child(2)>div:nth-child(1) {
+            width: 40rem;
+            height: 40rem;
+            background: url(./image/index/android.png) no-repeat center center;
+            background-size: auto 20rem;
+        }
+        
+        .tail {
+            font-size: 12rem;
+            background-color: #2F3130;
+            padding-top: 25rem;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="head_">
+
+            <head>
+                <div></div>
+                <div></div>
+                <div></div>
+            </head>
+        </div>
+        <div class="a1">
+            <div>请输入小区名或者商圈名查找<span>|</span></div>
+
+        </div>
+        <div class="w1">
+            <div class="gg1">区域</div>
+            <div class="gg1" id="ff">价格</div>
+            <div class="gg1">房型</div>
+            <div class="gg1">更多</div>
+        </div>
+        <div class="ll1">
+            <div class="k11">
+                <div>
+                    <div> 区域</div>
+                    <div>地铁</div>
+                </div>
+                <div>
+                    <ul>
+                        <li>附近</li>
+                        <li>不限</li>
+                        <li>朝阳</li>
+                        <li>海淀</li>
+                        <li>昌平</li>
+                        <li>丰台</li>
+                        <li>石景山</li>
+                    </ul>
+                    <ul>
+                        <li>不限</li>
+                        <li>安贞</li>
+                        <li>奥林匹克公园</li>
+                        <li>百子湾</li>
+                        <li>北工大</li>
+                        <li>北苑</li>
+                        <li>CBD</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="d1" class="">
+                <ul class="f1">
+                    <li>不限</li>
+                    <li>100万以下</li>
+                    <li>100万-150万</li>
+                    <li>150万-200万</li>
+                    <li>200万-250万</li>
+                    <li>250万-300万</li>
+                    <li>自定义房价</li>
+                </ul>
+            </div>
+            <div class="m11">
+                <ul class="m1">
+                    <li>不限 </li>
+                    <li class="bo2">1室 <input type="checkbox"></li>
+                    <li class="bo2">2室 <input type="checkbox"></li>
+                    <li class="bo2">3室 <input type="checkbox"></li>
+                    <li class="bo2">4室 <input type="checkbox"></li>
+                    <li>5室 <input type="checkbox"></li>
+                    <li>确定 </li>
+                </ul>
+            </div>
+            <div class="o11">
+                <div class="h2 bo2">
+                    <div>区域</div>
+                    <ul>
+                        <li>南</li>
+                        <li>南北</li>
+                        <li>东</li>
+                        <li>西</li>
+                        <li>北</li>
+                    </ul>
+                </div>
+                <div class="h2 bo2">
+                    <div>面积(平方)</div>
+                    <ul>
+                        <li>50以下</li>
+                        <li>50-70</li>
+                        <li>70-90</li>
+                        <li>90-110</li>
+                        <li>110-130</li>
+                        <li>130-150</li>
+                        <li>150-200</li>
+                        <li>200以上</li>
+                    </ul>
+                </div>
+                <div class="h2 bo2">
+                    <div>标签</div>
+                    <ul>
+                        <li>学区房</li>
+                        <li>地铁房</li>
+                        <li>不限购</li>
+                        <li>满两年</li>
+                        <li>满五唯一</li>
+                        <li>降价</li>
+                        <li>新上</li>
+                        <li>独家</li>
+                        <li>有钥匙</li>
+                    </ul>
+                </div>
+                <div class="h2 bo2">
+                    <div>楼龄</div>
+                    <ul>
+                        <li>5年以内</li>
+                        <li>10年以内</li>
+                        <li>10-30年</li>
+                        <li>30年以上</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="n3">
+                <li>
+                    <div><img src="./image/SecondHandList/img1.png " alt=""></div>
+                    <div>
+                        <div>西便门外大街2室1厅89平</div>
+                        <div>南北 高楼层</div>
+                        <div>签约价格:13244元 <span>905万</span></div>
+                        <div>签约日期:2015年11月10日</div>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="./image/SecondHandList/img3.png " alt=""></div>
+                    <div>
+                        <div>花涧溪二期 2室2厅 90平</div>
+                        <div>南北 高楼层/6层</div>
+                        <div>签约价格:13244元/平<span>1322万</span></div>
+                        <div>签约日期:2015年11月10日</div>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="./image/SecondHandList/img2.png " alt=""></div>
+                    <div>
+                        <div>西便门外大街2室1厅89平</div>
+                        <div>南北 高楼层</div>
+                        <div>签约价格:13244元 <span>905万</span></div>
+                        <div>签约日期:2015年11月10日</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="o2">
+            <div class="o1">
+                北京找房无忧><a href="./index.html">首页</a>
+            </div>
+        </div>
+        <div class="y1">
+            <div>
+                <div></div>
+                <div>iPhone<br>用户</div>
+            </div>
+            <div>
+                <div></div>
+                <div>Android<br>用户</div>
+            </div>
+        </div>
+        <div class="tail">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+
+
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        var a = true;
+        $('.ll1>div').hide();
+        $('.w1>div').on('touchstart', function() {
+            if (a) {
+                $(this).removeClass('gg1').addClass('gg2')
+                var f = $(this).index();
+                $('.ll1>div').eq(f).fadeIn(200, )
+                    // $('.ll1>div:not(eq(' + f + '))').hide();
+                a = false;
+                console.log(a)
+            } else if (!a) {
+                console.log(a)
+                var f = $(this).index();
+                $('.ll1>div').eq(f).hide()
+                $(this).removeClass('gg2').addClass('gg1')
+                a = true;
+            }
+        })
+    </script>
+</body>
+
+</html>

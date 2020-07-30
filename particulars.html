@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./js/swiper-bundle.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bo1 {
+            border-bottom: 1rem solid #ff8a00;
+        }
+        
+        .bo2 {
+            border-bottom: 1rem solid #E5E5E5;
+        }
+        
+        .bo3 {
+            border-top: 1rem solid #E5E5E5;
+            padding-top: 15rem;
+        }
+        
+        html {
+            font-size: 1px;
+        }
+        
+        .head_ {
+            height: 55rem;
+            background-color: #ff8a00;
+            overflow: hidden;
+            padding: 5rem 10rem;
+            height: 55rem;
+        }
+        
+        .head_>div {
+            float: left;
+        }
+        
+        .head_>div {
+            width: 124rem;
+            height: 51rem;
+            background: url(./image/index/logo.jpg)no-repeat center center;
+            float: left;
+            background-size: auto 36rem;
+        }
+        
+        .head_>div:nth-child(2) {
+            width: 51rem;
+            height: 51rem;
+            background: url(./image/index/xiazai.jpg) no-repeat center center;
+            float: right;
+            background-size: auto 29rem;
+        }
+        
+        .head_>div:nth-child(3) {
+            width: 27rem;
+            height: 50rem;
+            background: url(./image/index/my.jpg) no-repeat center center;
+            float: right;
+            background-size: auto 29rem;
+        }
+        
+        .o2 {
+            padding: 0 10rem;
+            background-color: #2F3130;
+        }
+        
+        .o1 {
+            height: 30rem;
+            background-color: #2F3130;
+            color: #999;
+            line-height: 30rem;
+            padding-left: 20rem;
+            border-bottom: 1rem solid #999;
+            font-size: 14rem;
+        }
+        
+        .y1 {
+            background-color: #2F3130;
+            display: flex;
+            /* justify-content: center; */
+            padding: 10rem 15rem;
+        }
+        
+        .y1>div {
+            display: flex;
+        }
+        
+        .y1>div>div:nth-child(2) {
+            color: #999;
+            font-size: 14rem;
+        }
+        
+        .y1>div:nth-child(1) {
+            margin-right: 55rem;
+        }
+        
+        .y1>div:nth-child(1)>div:nth-child(1) {
+            width: 40rem;
+            height: 40rem;
+            background: url(./image/index/apple.png) no-repeat center center;
+            background-size: auto 20rem;
+        }
+        
+        .y1>div:nth-child(2)>div:nth-child(1) {
+            width: 40rem;
+            height: 40rem;
+            background: url(./image/index/android.png) no-repeat center center;
+            background-size: auto 20rem;
+        }
+        
+        .tail {
+            font-size: 12rem;
+            background-color: #2F3130;
+            padding-top: 25rem;
+            color: #999;
+            text-align: center;
+        }
+        
+        .a1 {
+            width: 100%;
+            height: 184rem;
+            background: url(./image/SecondHandList/img.png) no-repeat center center;
+            background-size: auto 185rem;
+            overflow: hidden;
+        }
+        
+        .a1>div {
+            font-size: 10px;
+            width: 40px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 25%;
+            color: white;
+            float: right;
+            margin-top: 150rem;
+            margin-right: 20rem;
+        }
+        
+        .b1 {
+            width: 100%;
+            font-size: 20rem;
+            font-weight: 700;
+        }
+        
+        .b1>div {
+            padding: 10rem 10rem;
+        }
+        
+        .c1 {
+            padding: 0 10px;
+        }
+        
+        .c1>div {
+            height: 30rem;
+            line-height: 30rem;
+            background: url(./image/SecondHandList/phone.png) no-repeat right center;
+            background-size: auto 20rem;
+            font-size: 16rem;
+            padding-bottom: 10rem;
+        }
+        
+        .c1>div>span:nth-child(1) {
+            color: #E05E3F;
+        }
+        
+        .d1 {
+            padding: 0 10rem;
+            font-size: 12rem;
+            color: #BAC0C4;
+            padding-bottom: 10rem;
+        }
+        
+        .e1 {
+            padding: 0 10rem;
+            padding-bottom: 15rem;
+            overflow: hidden;
+        }
+        
+        .e1>div {
+            float: left;
+            background-color: #DEE9F0;
+            color: #91A7B9;
+            margin-right: 8rem;
+            font-size: 14rem;
+            padding: 4rem 4rem;
+        }
+        
+        .f1 {
+            width: 100%;
+            height: 15rem;
+            background-color: #F5F5F5;
+        }
+        
+        .g1 {
+            padding: 0 10rem;
+        }
+        
+        .g1>li {
+            border-bottom: 1rem solid #EBEBEB;
+            padding: 10rem 0;
+            font-size: 12rem;
+            display: flex;
+        }
+        
+        .g1>li>div {
+            flex: 1;
+        }
+        
+        .h1_ {
+            text-align: center;
+            padding: 10rem 0;
+            font-size: 12rem;
+            color: #CCCCCC;
+        }
+        
+        .i1 {
+            padding: 10rem 10rem;
+        }
+        
+        .i1>div {
+            color: #FF9326;
+            font-size: 18rem;
+            border-bottom: 1rem solid #E5E5E5;
+            padding-bottom: 10rem;
+        }
+        
+        .j1 {
+            width: 100%;
+            /* padding: 10rem; */
+        }
+        
+        .j1>div {
+            border-bottom: 1rem solid #E5E5E5;
+            font-size: 12rem;
+            margin: 0 10rem;
+            line-height: 20px;
+            padding-bottom: 10rem;
+        }
+        
+        .k1 {
+            width: 100%;
+            /* padding: 10rem; */
+            color: #FF9326;
+            font-size: 20rem;
+        }
+        
+        .k1>div {
+            margin: 10rem;
+            padding-bottom: 10rem;
+            border-bottom: 1rem solid #E5E5E5;
+        }
+        
+        .k2>li {
+            padding: 0 10rem;
+        }
+        
+        .k2>li>div {
+            display: flex;
+            padding: 10rem 0;
+            border-bottom: 1rem solid #E5E5E5;
+        }
+        
+        .k2>li>div>div:nth-child(1) {
+            flex: 1;
+        }
+        
+        .k2>li>div>div:nth-child(1)>img {
+            width: 90rem;
+        }
+        
+        .k2>li>div>div:nth-child(2) {
+            flex: 2;
+        }
+        
+        .p2 {
+            font-size: 20rem;
+        }
+        
+        .p3 {
+            font-size: 12rem;
+            margin: 8rem 0;
+        }
+        
+        .p4 {
+            font-size: 12rem;
+        }
+        
+        .p4>span {
+            background-color: #DFE6EB;
+            padding: 3rem 5rem;
+            margin-right: 8rem;
+            margin-top: 5rem;
+        }
+        
+        .m2>li {
+            padding: 10rem;
+            font-size: 14rem;
+        }
+        
+        .m2>li>span {
+            color: #9C9D9F;
+        }
+        
+        .m2>li:nth-child(1) {
+            font-size: 18rem;
+            font-weight: 600;
+        }
+        
+        .k3 {
+            width: 100%;
+            /* padding: 10rem; */
+            font-size: 20rem;
+        }
+        
+        .k3>div {
+            margin: 10rem;
+            padding-bottom: 10rem;
+            border-bottom: 1rem solid #E5E5E5;
+        }
+        
+        .s1 {
+            /* width: 100%; */
+            list-style: none;
+            padding: 10rem;
+        }
+        
+        .s1>li {
+            margin-top: 15rem;
+        }
+        
+        .s1>li>div>div>img {
+            width: 100rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .s1>li>div {
+            overflow: hidden;
+            display: flex;
+            padding-bottom: 20rem;
+        }
+        
+        .s1>li>div>div {
+            position: relative;
+            flex: 1;
+        }
+        
+        .s1>li>div>div:nth-child(2) {
+            padding-left: 8rem;
+            flex: 2;
+        }
+        
+        .r1 {
+            width: 186rem;
+            font-size: 20rem;
+            font-weight: 800;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .r2 {
+            overflow: hidden;
+        }
+        
+        .r2>div {
+            float: left;
+        }
+        
+        .r2>div:nth-child(2) {
+            float: right;
+            font-weight: 700;
+            color: #ff8a00;
+        }
+        
+        .r3 {
+            overflow: hidden;
+        }
+        
+        .r3>div {
+            float: left;
+            color: #AFAFAF;
+        }
+        
+        .r3>div:nth-child(2) {
+            float: right;
+        }
+        
+        .r2,
+        .r3 {
+            margin: 5rem 0;
+            font-size: 12rem;
+        }
+        
+        .r4 {
+            margin-top: 10rem;
+            font-size: 14rem;
+        }
+        
+        .r4>span {
+            padding: 3rem 5rem;
+            margin-right: 5rem;
+            background-color: #DFE6EB;
+        }
+        
+        .s3 {
+            padding: 10rem 5rem;
+            background-color: #F2F2F2;
+            font-size: 14rem;
+            margin-bottom: 10ren;
+        }
+        
+        .m22 {
+            height: 40rem;
+            padding-left: 10rem;
+            display: flex;
+            text-align: center;
+            margin-top: 10rem;
+        }
+        
+        .m22>div:nth-child(1) {
+            border-radius: 4rem;
+            height: 40rem;
+            line-height: 40rem;
+            background: url(./image/SecondHandList/user.png)no-repeat 20rem center;
+            background-size: auto 30rem;
+            background-color: #ff8a00;
+            text-align: center;
+            flex: 2;
+            font-size: 14rem;
+            color: white;
+        }
+        
+        .m22>div:nth-child(2) {
+            line-height: 40rem;
+            height: 40rem;
+            flex: 1;
+            font-size: 14rem;
+            background: url(./image/SecondHandList/xin.png)no-repeat 5rem center;
+            background-size: auto 30rem;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 200px;
+        }
+        
+        .swiper-slide>img {
+            width: 100%;
+            height: 200px;
+        }
+        
+        .maf {
+            padding: 10rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="head_">
+
+            <head>
+                <div></div>
+                <div></div>
+                <div></div>
+            </head>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/my/img1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/my/img2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/my/img3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/my/img4.png" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- <div class="a1">
+            <div>1/5</div>
+        </div> -->
+        <div class="b1">
+            <div>天鹅湾小区精装两居，满五唯一，业主换房急售</div>
+        </div>
+        <div class="c1">
+            <div>
+                <span> 576 </span><span>万元 (单价：46327元/平)</span>
+            </div>
+        </div>
+        <div class="d1">
+            挂牌时间2015年6月20日
+        </div>
+        <div class="e1">
+            <div>学区房</div>
+            <div>独家</div>
+            <div>满五唯一</div>
+        </div>
+        <div class="f1"></div>
+        <div>
+            <ul class="g1">
+                <li>
+                    <div>户型：3室2厅</div>
+                    <div>面积100平</div>
+                </li>
+                <li>
+                    <div>楼层：中楼层</div>
+                    <div>朝向：西南</div>
+                </li>
+                <li>
+                    <div>装修：精装</div>
+                    <div>楼型：塔楼</div>
+                </li>
+                <li>
+                    <div>年代：2004年</div>
+                    <div>区域：西二旗</div>
+                </li>
+                <li>
+                    <div>首付：123万</div>
+                    <div>月供：15683元</div>
+                </li>
+                <li>
+                    地铁：离西二旗地铁站800米
+                </li>
+                <li>
+                    小区：珠江帝景
+
+                </li>
+                <li>
+                    学校：北京市第二实验小学
+                </li>
+            </ul>
+        </div>
+        <div class="h1_">
+            更多房源信息
+        </div>
+        <div class="f1"></div>
+        <div class="i1">
+            <div>房源特色</div>
+        </div>
+        <div class="j1">
+            <div>小区环境优雅，虽处闹市中（小区南200米有美廉美超市、西30米有华联商场、星美国际影城、东北角就是大中电器、 小区东100米有汇佳幼儿园、昌平实验一小，昆泰国际大酒...
+            </div>
+        </div>
+        <div class="h1_">
+            更多特色
+        </div>
+        <div class="f1"></div>
+        <div class="k1">
+            <div>户型分间</div>
+        </div>
+        <ul class="k2">
+            <li>
+                <div class="bo1">
+                    <div><img src="./image/SecondHandList/img4.png" alt=""></div>
+                    <div>
+                        <div class="p2">当前格局</div>
+                        <div class="p3">
+                            分间信息：客厅25平米，南北通透
+                        </div>
+                        <div class="p4">
+                            <span>南北通透</span><span>全明格局</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div><img src="./image/SecondHandList/img5.png" alt=""></div>
+                    <div>
+                        <div class="p2">当前格局</div>
+                        <div class="p3">
+                            分间信息：客厅25平米，南北通透
+                        </div>
+                        <div class="p4">
+                            <span>南北通透</span><span>全明格局</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="f1"></div>
+        <div class="m1">
+            <ul class="m2">
+                <li class="bo2">对口学校</li>
+                <li class="bo2"><span>学校名称：</span>北京市第二实验小学</li>
+                <li class="bo2"><span>升学方式：</span>直升、派位</li>
+                <li class="bo2"><span>对口中学：</span>团结湖中学</li>
+                <li class="bo2"><span>划片小区：</span>3个划片小区 在售房源150套</li>
+                <li class="bo2"><span>学校特色：</span>包食宿、有校车</li>
+            </ul>
+        </div>
+        <div class="h1_">
+            查看学校详情
+        </div>
+        <div class="f1"></div>
+        <div class="k3">
+            <div>位置及周边</div>
+        </div>
+        <div class="maf">
+
+            <div id="container" style="width:100%; height:300px"></div>
+            <!-- 地图插件？ -->
+        </div>
+        <div class="f1"></div>
+        <div class="k3">
+            <div>推荐房源</div>
+        </div>
+        <ul class="s1">
+            <li>
+                <div>
+                    <div><img src="./image/index/img1.jpg" alt=""></div>
+                    <div>
+                        <div class="r1">文化部中间层 一层带阁楼</div>
+                        <div class="r2">
+                            <div>2室1厅96㎡南北</div>
+                            <div>1105万</div>
+                        </div>
+                        <div class="r3">
+                            <div>红庙北里</div>
+                            <div>14268元/平</div>
+                        </div>
+                        <div class="r4">
+                            <span>学区房</span><span>独家</span>
+                        </div>
+                    </div>
+                </div>
+                <nav class="s3">
+                    推荐理由：同户型、通风好、采光好
+                </nav>
+            </li>
+            <li>
+                <div class="bo3">
+                    <div><img src="./image/index/img1.jpg" alt=""></div>
+                    <div>
+                        <div class="r1">光大水墨 精装复式 稀缺</div>
+                        <div class="r2">
+                            <div>2室1厅96㎡南北</div>
+                            <div>1105万</div>
+                        </div>
+                        <div class="r3">
+                            <div>红庙北里</div>
+                            <div>14268元/平</div>
+                        </div>
+                        <div class="r4">
+                            <span>学区房</span>
+                        </div>
+                    </div>
+                </div>
+                <nav class="s3">
+                    推荐理由：同户型、通风好、采光好
+                </nav>
+            </li>
+        </ul>
+        <div class="h1_">
+            查看更多房源
+        </div>
+        <div class="o2">
+            <div class="o1">
+                北京找房无忧>首页
+            </div>
+        </div>
+        <div class="y1">
+            <div>
+                <div></div>
+                <div>iPhone<br>用户</div>
+            </div>
+            <div>
+                <div></div>
+                <div>Android<br>用户</div>
+            </div>
+        </div>
+        <div class="tail">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+        <div class="m22">
+            <div><span>联系经济人</span></div>
+            <div><span>关注</span></div>
+        </div>
+    </div>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            autoplay: {
+                delay: 1000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+        })
+
+        function init() {
+            var myLatlng = new qq.maps.LatLng(34.80028, 113.66057);
+            var myOptions = {
+                zoom: 15,
+                center: myLatlng,
+                mapTypeId: qq.maps.MapTypeId.ROADMAP
+            }
+            var map = new qq.maps.Map(document.getElementById("container"), myOptions);
+        }
+
+        function loadScript() {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://map.qq.com/api/js?v=2.exp&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&callback=init";
+            document.body.appendChild(script);
+        }
+
+        window.onload = loadScript;
+    </script>
+
+</body>
+
+</html>

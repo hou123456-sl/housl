@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/rem.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 1px;
+        }
+        
+        .a1 {
+            width: 100%;
+            height: 185rem;
+            background: url(./image/my/bg1.png) no-repeat center center;
+            background-size: auto 185rem;
+            display: flex;
+        }
+        
+        .a1>div {
+            width: 33.333%;
+        }
+        
+        .a1>div:nth-child(2) {
+            background: url(./image/my/urse2.png) no-repeat center center;
+            background-size: auto 50rem;
+            padding-top: 145rem;
+        }
+        
+        .a1>div:nth-child(2)>div {
+            color: white;
+            font-size: 16rem;
+            text-align: center;
+            padding: 5rem 4rem;
+            border: 1rem solid white;
+            border-radius: 3rem;
+        }
+        
+        .b1>div:nth-child(1) {
+            background: url(./image/my/down.png) no-repeat center top;
+            width: 30rem;
+            height: 30rem;
+            background-size: auto 20rem;
+        }
+        
+        .b1>div:nth-child(2) {
+            background: url(./image/my/urse.png) no-repeat center top;
+            width: 32rem;
+            height: 30rem;
+            background-size: auto 20rem;
+        }
+        
+        .b1 {
+            overflow: hidden;
+            margin-top: 8rem;
+        }
+        
+        .b1>div {
+            padding-left: 2rem;
+            float: right;
+            margin-right: 15rem;
+            padding-top: 20rem;
+            color: white;
+            font-size: 14rem;
+        }
+        
+        .c1 {
+            background-color: #F5F5F5;
+            width: 100%;
+            height: 5rem;
+        }
+        
+        .d1 {
+            color: #868686;
+            font-size: 12rem;
+            list-style: none;
+            padding: 0 15rem;
+        }
+        
+        .d1>li {
+            height: 40rem;
+            border-bottom: 1rem solid #E1E1E1;
+            line-height: 40rem;
+            padding-left: 25rem;
+            overflow: hidden;
+        }
+        
+        .d1>li>div {
+            float: right;
+            width: 30rem;
+            height: 30rem;
+            background: url(./image/my/right.png)no-repeat center center;
+            background-size: auto 15rem;
+            margin-top: 5rem;
+        }
+        
+        .d1>li:nth-child(1) {
+            background: url(./image/my/icon1.png) no-repeat left center;
+            background-size: auto 20rem;
+        }
+        
+        .d1>li:nth-child(2) {
+            background: url(./image/my/icon2.png) no-repeat left center;
+            background-size: auto 20rem;
+        }
+        
+        .d1>li:nth-child(3) {
+            background: url(./image/my/icon3.png) no-repeat left center;
+            background-size: auto 20rem;
+        }
+        
+        .d1>li:nth-child(4) {
+            background: url(./image/my/icon4.png) no-repeat left center;
+            background-size: auto 20rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="a1">
+            <div></div>
+            <div>
+                <div>登录</div>
+            </div>
+            <div class="b1">
+                <div>APP</div>
+                <div>我的</div>
+            </div>
+        </div>
+        <div class="c1"></div>
+        <div>
+            <ul class="d1">
+                <li>我关注的房源
+                    <div></div>
+                </li>
+                <li>我关注的小区
+                    <div></div>
+                </li>
+                <li>我关注的新房
+                    <div></div>
+                </li>
+                <li>我的看房记录
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
